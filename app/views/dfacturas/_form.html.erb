@@ -1,0 +1,33 @@
+<%= form_for(@dfactura) do |f| %>
+  <% if @dfactura.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dfactura.errors.count, "error") %> prohibited this dfactura from being saved:</h2>
+
+      <ul>
+      <% @dfactura.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cantidad %><br>
+    <%= f.number_field :cantidad %>
+  </div>
+  <div class="field">
+    <%= f.label :hh %><br>
+    <%= f.number_field :hh %>
+  </div>
+  <div class="field">
+    <%= f.label :Producto_id %><br>
+    <%= f.text_field :Producto_id %>
+  </div>
+  <div class="field">
+    <%= f.label :cfactura_id %><br>
+    <%= f.text_field :cfactura_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

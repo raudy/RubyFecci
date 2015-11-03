@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @mat_prod.cantidad %>
+</p>
+
+<p>
+  <strong>Materia:</strong>
+  <%= @mat_prod.Materia_id %>
+</p>
+
+<p>
+  <strong>Produto:</strong>
+  <%= @mat_prod.Produto_id %>
+</p>
+
+<%= link_to 'Edit', edit_mat_prod_path(@mat_prod) %> |
+<%= link_to 'Back', mat_prods_path %>

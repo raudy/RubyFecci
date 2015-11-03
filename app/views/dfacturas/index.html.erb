@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Dfacturas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cantidad</th>
+      <th>Hh</th>
+      <th>Producto</th>
+      <th>Cfactura</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dfacturas.each do |dfactura| %>
+      <tr>
+        <td><%= dfactura.cantidad %></td>
+        <td><%= dfactura.hh %></td>
+        <td><%= dfactura.Producto_id %></td>
+        <td><%= dfactura.cfactura_id %></td>
+        <td><%= link_to 'Show', dfactura %></td>
+        <td><%= link_to 'Edit', edit_dfactura_path(dfactura) %></td>
+        <td><%= link_to 'Destroy', dfactura, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dfactura', new_dfactura_path %>

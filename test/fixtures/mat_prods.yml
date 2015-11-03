@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cantidad: 1
+  Materia_id: MyString
+  Produto_id: MyString
+
+two:
+  cantidad: 1
+  Materia_id: MyString
+  Produto_id: MyString

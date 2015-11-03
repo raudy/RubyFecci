@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Num:</strong>
+  <%= @cfactura.num %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @cfactura.fecha %>
+</p>
+
+<p>
+  <strong>Mneto:</strong>
+  <%= @cfactura.mneto %>
+</p>
+
+<p>
+  <strong>Mbruto:</strong>
+  <%= @cfactura.mbruto %>
+</p>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @cfactura.cliente_id %>
+</p>
+
+<%= link_to 'Edit', edit_cfactura_path(@cfactura) %> |
+<%= link_to 'Back', cfacturas_path %>

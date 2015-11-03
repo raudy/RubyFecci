@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @dfactura.cantidad %>
+</p>
+
+<p>
+  <strong>Hh:</strong>
+  <%= @dfactura.hh %>
+</p>
+
+<p>
+  <strong>Producto:</strong>
+  <%= @dfactura.Producto_id %>
+</p>
+
+<p>
+  <strong>Cfactura:</strong>
+  <%= @dfactura.cfactura_id %>
+</p>
+
+<%= link_to 'Edit', edit_dfactura_path(@dfactura) %> |
+<%= link_to 'Back', dfacturas_path %>
