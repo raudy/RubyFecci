@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Clientes</h1>
+<h1>Listando Clientes</h1>
 
 <table>
   <thead>
