@@ -142,9 +142,12 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
 <<<<<<< HEAD
+<<<<<<< HEAD
   devise (~> 3.5)
 =======
 >>>>>>> a3f47fbc8df577d518ae44473c1c037128e2f2c0
+=======
+>>>>>>> 3daca7fc43cabdedf0d10049af8692ae2a806387
   jbuilder (~> 2.0)
   jquery-rails
   mysql2 (~> 0.3.18)
