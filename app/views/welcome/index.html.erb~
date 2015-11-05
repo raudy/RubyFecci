@@ -16,28 +16,22 @@ h1{color:white;}
 <body> 
 <h1>FECCI</h1> 
 
-<<<<<<< HEAD
-<img src="../home/paola/RubyFecci/app/views/welcome/agro.jpg" alt="ficha">  
-=======
-<img src="agro.jpg">  
->>>>>>> 1535f2c1ad1a1da83a47a343a986d161f119b80b
+
+<center><img src="agro.jpg"></center>  
+
 <br>  
 
 <p>Esta es una página web sobre una mini empresa para la crecion de productos</p> 
  
-<ul> 
-<<<<<<< HEAD
-<li><a href="http://localhost:3000/clientes">listado clientes</a></li> 
-<li><a href="http://localhost:3000/materia">listado materia</a></li> 
-=======
-<li><a href="http://localhost:3000/clientes">Listado clientes</a></li> 
-<br>  
-<li><a href="http://localhost:3000/materia">Listado materia</a></li> 
-<br>  
-<li><a href="http://localhost:3000/productos">Listado producto</a></li> 
-<br>
->>>>>>> 1535f2c1ad1a1da83a47a343a986d161f119b80b
-<li><a href="http://localhost:3000/about/index">Acerca de </a></li> 
+<ul>
+<center><table>
+<tr>
+<td><a href="http://localhost:3000/clientes">Listado clientes</a></td> 
+<td><a href="http://localhost:3000/materia">Listado materia</a></td>  
+<td><a href="http://localhost:3000/productos">Listado producto</a></td> 
+<td><a href="http://localhost:3000/about/index">Acerca de </a></td>
+</tr>
+</table></center>
 </ul> 
  
 </body>  
