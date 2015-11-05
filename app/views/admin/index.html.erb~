@@ -13,27 +13,21 @@ h1{color:white;}
 </style>
 </head>
 <body>
-<h1>FECCI</h1>
-
-<img src="agro.jpg" alt="ficha" marginheight="75" marginwidth="75">
+<h1>ADMINISTRADOR</h1>
 
 <br>
 
 <p>Esta es una página web sobre una mini empresa para la crecion de productos</p>
 
 <ul>
+<li><a href="http://localhost:3000/clientes">Listado clientes</a></li>
+<br>
+<li><a href="http://localhost:3000/materia">Listado materia</a></li>
 <br>
 <li><a href="http://localhost:3000/productos">Listado producto</a></li>
 <br>
-<li><a href="http://localhost:3000/about/index">Acerca de </a></li>
-<br>
-<br>
-<br>
-<li><a href="http://localhost:3000/admin/index">Administrador </a></li>
-
+<li><a href="http://localhost:3000/categoria">Listado categoria</a></li>
 </ul>
-
-
 
 </body>
 </html>

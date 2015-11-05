@@ -3,6 +3,7 @@
 <html lang="es">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=windows-1252">
+<title>Mi Primera Pagina</title>
 <style>
 body{background:#01DF3A;
 font-size:20px;
@@ -22,18 +23,14 @@ h1{color:white;}
 <p>Esta es una página web sobre una mini empresa para la crecion de productos</p>
 
 <ul>
+<li><a href="http://localhost:3000/clientes">Listado clientes</a></li>
+<br>
+<li><a href="http://localhost:3000/materia">Listado materia</a></li>
 <br>
 <li><a href="http://localhost:3000/productos">Listado producto</a></li>
 <br>
 <li><a href="http://localhost:3000/about/index">Acerca de </a></li>
-<br>
-<br>
-<br>
-<li><a href="http://localhost:3000/admin/index">Administrador </a></li>
-
 </ul>
-
-
 
 </body>
 </html>
