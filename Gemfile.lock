@@ -141,6 +141,10 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
+<<<<<<< HEAD
+  devise (~> 3.5)
+=======
+>>>>>>> a3f47fbc8df577d518ae44473c1c037128e2f2c0
   jbuilder (~> 2.0)
   jquery-rails
   mysql2 (~> 0.3.18)
