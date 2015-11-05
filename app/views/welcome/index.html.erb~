@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 21cb3ffd9fb0bac3efa97a27a06c6317578b498d
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -18,22 +15,18 @@ h1{color:red;}
 </head> 
 
 <body> 
-<h1>Fecci</h1> 
+<h1>FECCI</h1> 
 
-<img src="agro.jpg" alt="Esta es mi casa">  
+<img src="agro.jpg" alt="ficha">  
 <br>  
-<a href="http://localhost:3000/clientes/">Link para ir a clientes</a> 
+<a href="http://www.google.com/">Link para ir a Google</a> 
  
-<<<<<<< HEAD
-<p>Esta es una página web para la empresa Fecci sobre contruccion de materiales.</p> 
-=======
-<p>Esta es una página web para la empresa Fecci. Hola a todos</p> 
->>>>>>> 21cb3ffd9fb0bac3efa97a27a06c6317578b498d
+<p>Esta es una página web sobre una mini empresa para la crecion de productos</p> 
  
 <ul> 
-<li><a href="http://localhost:3000/materia">materias</a></li> 
-<li><a href="página2.html">Otra mas</a></li> 
-<li><a href="about.html">Acerca de mi</a></li> 
+<li><a href="http://localhost:3000/clientes">listado clientes</a></li> 
+<li><a href="http://localhost:3000/materia">listado materia</a></li> 
+<li><a href="about.html">Acerca de </a></li> 
 </ul> 
  
 </body>  
