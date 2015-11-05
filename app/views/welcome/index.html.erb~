@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 21cb3ffd9fb0bac3efa97a27a06c6317578b498d
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,7 +24,11 @@ h1{color:red;}
 <br>  
 <a href="http://localhost:3000/clientes/">Link para ir a clientes</a> 
  
-<p>Esta es una página web para la empresa Fecci.</p> 
+<<<<<<< HEAD
+<p>Esta es una página web para la empresa Fecci sobre contruccion de materiales.</p> 
+=======
+<p>Esta es una página web para la empresa Fecci. Hola a todos</p> 
+>>>>>>> 21cb3ffd9fb0bac3efa97a27a06c6317578b498d
  
 <ul> 
 <li><a href="http://localhost:3000/materia">materias</a></li> 
