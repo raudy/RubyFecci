@@ -3,7 +3,6 @@
 <html lang="es">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=windows-1252">
-<title>Mi Primera Pagina</title>
 <style>
 body{background:#01DF3A;
 font-size:20px;
@@ -14,10 +13,7 @@ h1{color:white;}
 </style>
 </head>
 <body>
-<h1>FECCI</h1>
-
-<<<<<<< HEAD
-<<<<<<< HEAD
+<h1>Fecci</h1>
 
 <center><img src="agro.jpg"></center>  
 
@@ -37,30 +33,31 @@ h1{color:white;}
 </ul> 
  
 </body>  
-=======
+
 <img src="../home/paola/RubyFecci/app/views/welcome/agro.jpg" alt="ficha" marginheight="75" marginwidth="75">
 <img src="agro.jpg">
 =======
 <img src="agro.jpg" alt="ficha" marginheight="75" marginwidth="75">
 
->>>>>>> 517ea428cdc1203d9455f0b72da92925b69a6b1a
+
 <br>
 
 <p>Esta es una página web sobre una mini empresa para la crecion de productos</p>
 
 <ul>
-<li><a href="http://localhost:3000/clientes">Listado clientes</a></li>
-<br>
-<li><a href="http://localhost:3000/materia">Listado materia</a></li>
 <br>
 <li><a href="http://localhost:3000/productos">Listado producto</a></li>
 <br>
 <li><a href="http://localhost:3000/about/index">Acerca de </a></li>
+<br>
+<br>
+<br>
+<li><a href="http://localhost:3000/admin/index">Administrador </a></li>
+
 </ul>
 
+
+
 </body>
-<<<<<<< HEAD
->>>>>>> 177f1056a5ef28608439a2f6f889dfbf6fa9a003
-=======
->>>>>>> 517ea428cdc1203d9455f0b72da92925b69a6b1a
+
 </html>
