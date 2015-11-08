@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Materia</h1>
+<h1>Listando Materia</h1>
 
 <table>
   <thead>
@@ -25,7 +25,8 @@
 </table>
 
 <br>
+
+<%= link_to 'Nueva Materium', new_materium_path %>
 <br>
 <br>
 <li><a href="http://localhost:3000">Volver a pagina principal</a></li> 
-<%= link_to 'New Materium', new_materium_path %>

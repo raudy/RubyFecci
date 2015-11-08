@@ -25,10 +25,11 @@
     <% end %>
   </tbody>
 </table>
-<br>
-<br>
-<li><a href="http://localhost:3000">Volver a pagina principal</a></li> 
+
 
 <br>
 
 <%= link_to 'New Producto', new_producto_path %>
+<br>
+<br>
+<li><a href="http://localhost:3000">Volver a pagina principal</a></li> 

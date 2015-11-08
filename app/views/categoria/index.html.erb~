@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'Nueva Categoria', new_categorium_path %>
+<%= link_to 'New Categorium', new_categorium_path %>
