@@ -8,9 +8,9 @@ Rails.application.routes.draw do
   resources :cfacturas
   resources :mat_prods
   resources :productos
-  resources :categoria
+  resources :categorias
   resources :entregas
-  resources :materia
+  resources :materias
   resources :clientes
 
   #root 'empleados#index'

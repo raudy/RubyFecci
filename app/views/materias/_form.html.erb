@@ -1,10 +1,10 @@
-<%= form_for(@materium) do |f| %>
-  <% if @materium.errors.any? %>
+<%= form_for(@materia) do |f| %>
+  <% if @materia.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@materium.errors.count, "error") %> prohibited this materium from being saved:</h2>
+      <h2><%= pluralize(@materia.errors.count, "error") %> prohibited this materia from being saved:</h2>
 
       <ul>
-      <% @materium.errors.full_messages.each do |message| %>
+      <% @materia.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>

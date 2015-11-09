@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20151105191016) do
 
-  create_table "categoria", force: :cascade do |t|
+  create_table "categorias", force: :cascade do |t|
     t.integer  "cod",        limit: 4
     t.string   "nombre",     limit: 255
     t.datetime "created_at",             null: false
@@ -72,7 +72,7 @@ ActiveRecord::Schema.define(version: 20151105191016) do
     t.datetime "updated_at",             null: false
   end
 
-  create_table "materia", force: :cascade do |t|
+  create_table "materias", force: :cascade do |t|
     t.integer  "cod",        limit: 4
     t.string   "nombre",     limit: 255
     t.datetime "created_at",             null: false

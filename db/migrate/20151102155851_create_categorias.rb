@@ -1,6 +1,6 @@
-class CreateMateria < ActiveRecord::Migration
+class CreateCategorias < ActiveRecord::Migration
   def change
-    create_table :materia do |t|
+    create_table :categorias do |t|
       t.integer :cod
       t.string :nombre
 
