@@ -69,6 +69,6 @@ class MatProdsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def mat_prod_params
-      params.require(:mat_prod).permit(:cantidad, :Materia_id, :Produto_id)
+      params.require(:mat_prod).permit(:cantidad, :materia_id, :producto_id)
     end
 end

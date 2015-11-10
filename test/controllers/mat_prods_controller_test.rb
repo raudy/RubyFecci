@@ -18,7 +18,7 @@ class MatProdsControllerTest < ActionController::TestCase
 
   test "should create mat_prod" do
     assert_difference('MatProd.count') do
-      post :create, mat_prod: { Materia_id: @mat_prod.Materia_id, Produto_id: @mat_prod.Produto_id, cantidad: @mat_prod.cantidad }
+      post :create, mat_prod: { cantidad: @mat_prod.cantidad, materia_id: @mat_prod.materia_id, producto_id: @mat_prod.producto_id }
     end
 
     assert_redirected_to mat_prod_path(assigns(:mat_prod))
@@ -35,7 +35,7 @@ class MatProdsControllerTest < ActionController::TestCase
   end
 
   test "should update mat_prod" do
-    patch :update, id: @mat_prod, mat_prod: { Materia_id: @mat_prod.Materia_id, Produto_id: @mat_prod.Produto_id, cantidad: @mat_prod.cantidad }
+    patch :update, id: @mat_prod, mat_prod: { cantidad: @mat_prod.cantidad, materia_id: @mat_prod.materia_id, producto_id: @mat_prod.producto_id }
     assert_redirected_to mat_prod_path(assigns(:mat_prod))
   end
 

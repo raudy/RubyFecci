@@ -2,14 +2,14 @@
 
 one:
   num: 1
-  fecha: 2015-11-02
+  fecha: 2015-11-10
   mneto: 1
   mbruto: 1
   cliente_id: MyString
 
 two:
   num: 1
-  fecha: 2015-11-02
+  fecha: 2015-11-10
   mneto: 1
   mbruto: 1
   cliente_id: MyString

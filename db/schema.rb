@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151105191016) do
+ActiveRecord::Schema.define(version: 20151110222752) do
 
-  create_table "categorias", force: :cascade do |t|
+  create_table "categoria", force: :cascade do |t|
     t.integer  "cod",        limit: 4
     t.string   "nombre",     limit: 255
     t.datetime "created_at",             null: false
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 20151105191016) do
   create_table "dfacturas", force: :cascade do |t|
     t.integer  "cantidad",    limit: 4
     t.integer  "hh",          limit: 4
-    t.string   "Producto_id", limit: 255
+    t.string   "producto_id", limit: 255
     t.string   "cfactura_id", limit: 255
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
@@ -65,14 +65,14 @@ ActiveRecord::Schema.define(version: 20151105191016) do
   end
 
   create_table "mat_prods", force: :cascade do |t|
-    t.integer  "cantidad",   limit: 4
-    t.string   "Materia_id", limit: 255
-    t.string   "Produto_id", limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.integer  "cantidad",    limit: 4
+    t.string   "materia_id",  limit: 255
+    t.string   "producto_id", limit: 255
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
-  create_table "materias", force: :cascade do |t|
+  create_table "materia", force: :cascade do |t|
     t.integer  "cod",        limit: 4
     t.string   "nombre",     limit: 255
     t.datetime "created_at",             null: false
@@ -86,23 +86,5 @@ ActiveRecord::Schema.define(version: 20151105191016) do
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
   end
-
-  create_table "users", force: :cascade do |t|
-    t.string   "email",                  limit: 255, default: "", null: false
-    t.string   "encrypted_password",     limit: 255, default: "", null: false
-    t.string   "reset_password_token",   limit: 255
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          limit: 4,   default: 0,  null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip",     limit: 255
-    t.string   "last_sign_in_ip",        limit: 255
-    t.datetime "created_at",                                      null: false
-    t.datetime "updated_at",                                      null: false
-  end
-
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end

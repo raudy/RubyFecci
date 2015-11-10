@@ -69,6 +69,6 @@ class DfacturasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dfactura_params
-      params.require(:dfactura).permit(:cantidad, :hh, :Producto_id, :cfactura_id)
+      params.require(:dfactura).permit(:cantidad, :hh, :producto_id, :cfactura_id)
     end
 end

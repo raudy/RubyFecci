@@ -7,7 +7,7 @@
     <tr>
       <th>Cantidad</th>
       <th>Materia</th>
-      <th>Produto</th>
+      <th>Producto</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,8 +16,8 @@
     <% @mat_prods.each do |mat_prod| %>
       <tr>
         <td><%= mat_prod.cantidad %></td>
-        <td><%= mat_prod.Materia_id %></td>
-        <td><%= mat_prod.Produto_id %></td>
+        <td><%= mat_prod.materia_id %></td>
+        <td><%= mat_prod.producto_id %></td>
         <td><%= link_to 'Show', mat_prod %></td>
         <td><%= link_to 'Edit', edit_mat_prod_path(mat_prod) %></td>
         <td><%= link_to 'Destroy', mat_prod, method: :delete, data: { confirm: 'Are you sure?' } %></td>

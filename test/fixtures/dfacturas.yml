@@ -3,11 +3,11 @@
 one:
   cantidad: 1
   hh: 1
-  Producto_id: MyString
+  producto_id: MyString
   cfactura_id: MyString
 
 two:
   cantidad: 1
   hh: 1
-  Producto_id: MyString
+  producto_id: MyString
   cfactura_id: MyString

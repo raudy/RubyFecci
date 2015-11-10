@@ -18,7 +18,7 @@ class DfacturasControllerTest < ActionController::TestCase
 
   test "should create dfactura" do
     assert_difference('Dfactura.count') do
-      post :create, dfactura: { Producto_id: @dfactura.Producto_id, cantidad: @dfactura.cantidad, cfactura_id: @dfactura.cfactura_id, hh: @dfactura.hh }
+      post :create, dfactura: { cantidad: @dfactura.cantidad, cfactura_id: @dfactura.cfactura_id, hh: @dfactura.hh, producto_id: @dfactura.producto_id }
     end
 
     assert_redirected_to dfactura_path(assigns(:dfactura))
@@ -35,7 +35,7 @@ class DfacturasControllerTest < ActionController::TestCase
   end
 
   test "should update dfactura" do
-    patch :update, id: @dfactura, dfactura: { Producto_id: @dfactura.Producto_id, cantidad: @dfactura.cantidad, cfactura_id: @dfactura.cfactura_id, hh: @dfactura.hh }
+    patch :update, id: @dfactura, dfactura: { cantidad: @dfactura.cantidad, cfactura_id: @dfactura.cfactura_id, hh: @dfactura.hh, producto_id: @dfactura.producto_id }
     assert_redirected_to dfactura_path(assigns(:dfactura))
   end
 
