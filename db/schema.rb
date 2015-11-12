@@ -48,13 +48,6 @@ ActiveRecord::Schema.define(version: 20151110222752) do
     t.datetime "updated_at",              null: false
   end
 
-  create_table "empleados", force: :cascade do |t|
-    t.string   "user",       limit: 255
-    t.string   "pass",       limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-  end
-
   create_table "entregas", force: :cascade do |t|
     t.integer  "cantidad",   limit: 4
     t.date     "fecha"
