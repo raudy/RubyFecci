@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+@media (min-width: 767px) {
+body { padding-top: 60px; }
+}
+
+a.btn { color: #FFF; }
+a.btn:visited { color: #FFF; }
+
+div.navbar div.container a { color: #EEE}
