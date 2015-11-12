@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
     
 
+  get 'home/index'
+
   resources :dfacturas
   resources :cfacturas
   resources :mat_prods
