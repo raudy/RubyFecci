@@ -12,6 +12,14 @@
   <header class="navbar navbar-fixed-top navbar-default">
     <div class="container">
       <%= link_to "Fecci", root_path, class: "btn btn-lg btn-success", id: "logo" %>
+
+<% if current_user %>
+    <%= link_to 'Cerrar sesión', destroy_user_session_path, method: :delete %>
+<% else %>
+    <%= link_to 'Ingresar', new_user_session_path %>
+    <%= link_to 'Registrarse', new_user_registration_path %>
+<% end %>
+
     </div>
   </header>
 <div class="container">
