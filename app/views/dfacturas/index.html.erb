@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Dfacturas</h1>
+<h1>Listando Detalle de Facturas</h1>
 
 <table>
   <thead>
@@ -20,9 +20,9 @@
         <td><%= dfactura.hh %></td>
         <td><%= dfactura.producto_id %></td>
         <td><%= dfactura.cfactura_id %></td>
-        <td><%= link_to 'Show', dfactura %></td>
-        <td><%= link_to 'Edit', edit_dfactura_path(dfactura) %></td>
-        <td><%= link_to 'Destroy', dfactura, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', dfactura %></td>
+        <td><%= link_to 'Editar', edit_dfactura_path(dfactura) %></td>
+        <td><%= link_to 'Eliminar', dfactura, method: :delete, data: { confirm: 'Está seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Dfactura', new_dfactura_path %>
+<%= link_to 'Nueva Dfactura', new_dfactura_path %>

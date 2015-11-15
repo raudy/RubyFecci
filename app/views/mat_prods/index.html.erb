@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Mat Prods</h1>
+<h1>Listando Materia-Producto</h1>
 
 <table>
   <thead>
@@ -18,9 +18,9 @@
         <td><%= mat_prod.cantidad %></td>
         <td><%= mat_prod.materia_id %></td>
         <td><%= mat_prod.producto_id %></td>
-        <td><%= link_to 'Show', mat_prod %></td>
-        <td><%= link_to 'Edit', edit_mat_prod_path(mat_prod) %></td>
-        <td><%= link_to 'Destroy', mat_prod, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', mat_prod %></td>
+        <td><%= link_to 'Editar', edit_mat_prod_path(mat_prod) %></td>
+        <td><%= link_to 'Eliminar', mat_prod, method: :delete, data: { confirm: 'Está seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Mat prod', new_mat_prod_path %>
+<%= link_to 'Nueva Mat_Prod', new_mat_prod_path %>
