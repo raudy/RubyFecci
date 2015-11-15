@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listando Cfacturas</h1>
+<h1>Listing Cfacturas</h1>
 
 <table>
   <thead>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'Nueva Cfactura', new_cfactura_path %>
+<%= link_to 'New Cfactura', new_cfactura_path %>
