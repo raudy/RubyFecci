@@ -2,4 +2,4 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Volver', clientes_path %>
+<%= link_to 'Back', clientes_path %>

@@ -4,6 +4,6 @@
 
 <nav class="navbar-inverse navbar-default">
 	<tr>
-        <td><%= link_to "Clientes",{ controller: "clientes"}, class: "btn btn-lg "%></td>
+        <td><%= link_to "clientes",{ controller: "clientes"}, class: "btn btn-lg "%></td>
     </tr>
 </nav>
