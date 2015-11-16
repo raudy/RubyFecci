@@ -59,10 +59,18 @@ td {
     font-size: 15px;
     line-height: 20px;
     padding-right: 20px;
-    text-align: center;
+    text-align: justify;
     vertical-align: top;
     width: 20%;
 }
 
 
 
+td.first {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 20 px;
+    text-align: justify;
+    vertical-align: top;
+    width: 20%;
+}
