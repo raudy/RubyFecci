@@ -55,22 +55,35 @@ h2{
     color: #777;
 }
 
-td {
+td.first {
     font-size: 15px;
     line-height: 20px;
-    padding-right: 20px;
-    text-align: justify;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
     vertical-align: top;
-    width: 20%;
+    width: 40%;
+    border-collapse: separate;
 }
 
 
 
-td.first {
+table{
     font-size: 15px;
     line-height: 20px;
-    padding: 20 px;
-    text-align: justify;
+    padding-right: 20px;
+    text-align: center;
     vertical-align: top;
-    width: 20%;
+    width: 30%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+tr{
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: top;
+    width: 40%;
+    border-collapse: separate;
 }

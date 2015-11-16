@@ -10,20 +10,21 @@
 </head>
 <body>
 
-	<nav class="navbar-inverse navbar-default">
-		<table>
-		<tr>
-			<td><%= link_to "Inicio",{ controller: "home"}, class: "btn btn-lg "%></td>
+<nav class="navbar-inverse navbar-default">
+	<table>
+	<tr>
+	<td class="first">
+		<td><%= link_to "Inicio",{ controller: "home"}, class: "btn btn-lg "%></td>
 
-	        <td><%= link_to "Quiénes Somos",{ controller: "quienesomos"}, class: "btn btn-lg "%></td>
+        <td><%= link_to "Quiénes Somos",{ controller: "quienesomos"}, class: "btn btn-lg "%></td>
 
-	        <td><%= link_to "Productos",{ controller: "mostrarprod"}, class: "btn btn-lg "%></td>
+        <td><%= link_to "Productos",{ controller: "mostrarprod"}, class: "btn btn-lg "%></td>
 
-	        <td><%= link_to "Contacto",{ controller: "contacto"}, class: "btn btn-lg "%></td>
-
-	    </tr>
-	    </table>
-	</nav>
+        <td><%= link_to "Contacto",{ controller: "contacto"}, class: "btn btn-lg "%></td>
+    </td>
+    </tr>
+    </table>
+</nav>
 
 <br>
 <br>
