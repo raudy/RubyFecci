@@ -4,7 +4,7 @@
 <nav class="navbar-inverse navbar-default">
 
     <table>
-    <td class="first">
+    <tr>
       <td><%= link_to "Inicio",{ controller: "home"}, class: "btn btn-lg "%></td>
 
           <td><%= link_to "Quiénes Somos",{ controller: "quienesomos"}, class: "btn btn-lg "%></td>
@@ -12,7 +12,6 @@
           <td><%= link_to "Productos",{ controller: "mostrarprod"}, class: "btn btn-lg "%></td>
 
           <td><%= link_to "Contacto",{ controller: "contacto"}, class: "btn btn-lg "%></td>
-	<td>
       </tr>
     </table>
   </nav>

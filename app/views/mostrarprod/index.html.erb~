@@ -1,19 +1,17 @@
-<h1>Quiénes somos</h1>
+<h1>Productos</h1>
 <br>
 <br>
 <nav class="navbar-inverse navbar-default">
     <table>
-    <td class="first">
-		
-		<td><%= link_to "Inicio",{ controller: "home"}, class: "btn btn-lg "%></td>
+		<tr>
+			<td><%= link_to "Inicio",{ controller: "home"}, class: "btn btn-lg "%></td>
 
 	        <td><%= link_to "Quiénes Somos",{ controller: "quienesomos"}, class: "btn btn-lg "%></td>
 
 	        <td><%= link_to "Productos",{ controller: "mostrarprod"}, class: "btn btn-lg "%></td>
 
 	        <td><%= link_to "Contacto",{ controller: "contacto"}, class: "btn btn-lg "%></td>
-	<td>    
-	</tr>
+	    </tr>
 	</table>
 </nav>
 <br>
@@ -22,4 +20,7 @@
 <br>
 
 
-<h2>Sociedad Fecci, se fundó en Noviembre de 2015 como respuesta a los requerimientos de muchos clientes en el Rubro de la Construcción, Agrícola, Minería y Tratamientos de Aguas Industriales, entre otros .....</h2>
+<h2>Nuestra gama de productos:</h2>
+
+
+

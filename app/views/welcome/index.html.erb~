@@ -1,5 +1,5 @@
 <div class="center jumbotron">
-    <h1>Trasvasije Alex Soto</h1>
+    <h1>TRASVASIJE ALEX SOTO</h1>
     <h2>Bienvenidos a nuestra página</h2>
     <%= link_to "Ingresar", {controller: "home", action: "index"}, class: "btn btn-lg btn-success" %>
 </div>
