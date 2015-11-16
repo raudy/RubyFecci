@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
     
 
+  get 'mostrarprod/index'
+
+  get 'contacto/index'
+
+  get 'quienesomos/index'
+
+  get 'inicio/index'
+
   devise_for :users
   get 'home/index'
 
