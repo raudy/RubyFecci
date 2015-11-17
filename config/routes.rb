@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
     
 
+  get 'cliente/index'
+
+  get 'empleado/index'
+
   get 'administrador/index'
 
   get 'mostrarprod/index'
