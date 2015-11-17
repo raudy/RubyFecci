@@ -4,12 +4,12 @@
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :email, "Correo" %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
 
   <div class="field">
-    <%= f.label :Contraseña %>
+    <%= f.label :password , "Contraseña" %>
     <% if @validatable %>
     <em>(<%= @minimum_password_length %> carácteres mínimo)</em>
     <% end %><br />
@@ -17,7 +17,7 @@
   </div>
 
   <div class="field">
-    <%= f.label :Confirmación_Contraseña %><br />
+    <%= f.label :password_confirmation, "Confirmación Contraseña" %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
