@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
     
 
+  get 'administrador/index'
+
   get 'mostrarprod/index'
 
   get 'contacto/index'
