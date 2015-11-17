@@ -11,29 +11,47 @@
 <body>
 
 <nav class="navbar-inverse navbar-default">
-	<table class="second">
-	<tr>
-	<td class="first">
-	<td><%= link_to "Inicio",{ controller: "home"}, class: "btn btn-lg "%></td>
-
-        <td><%= link_to "Quiénes Somos",{ controller: "quienesomos"}, class: "btn btn-lg "%></td>
-
-        <td><%= link_to "Productos",{ controller: "mostrarprod"}, class: "btn btn-lg "%></td>
-
-        <td><%= link_to "Contacto",{ controller: "contacto"}, class: "btn btn-lg "%></td>
-    </td>
-    </tr>
-    </table>
+<table>
+<div class="row">
+    <div class="col-md-3">
+      <%= link_to "Inicio",{ controller: "home"}, class: "btn btn-lg "%></div>
+    <div class="col-md-3">
+        <%= link_to "Quiénes Somos",{ controller: "quienesomos"}, class: "btn btn-lg "%></div>
+    <div class="col-md-3">
+        <%= link_to "Productos",{ controller: "mostrarprod"}, class: "btn btn-lg "%></div>
+    <div class="col-md-3">
+        <%= link_to "Contacto",{ controller: "contacto"}, class: "btn btn-lg "%></div>
+    </div>
+</div>
+</table>
 </nav>
 
 <br>
 <br>
 <br>
 <br>
-	<h3>Misión:<h3><h2>Entregar la mejor calidad, servicio y precios de mercado. Para ello enfocaremos 		nuestro trabajo en un mejoramiento continuo con los servicios prestados hacia ellos y así dar respuesta 	real y satisfactoria a sus requerimientos. </h2>
-	<p></p>
-	<br>
-	<h3>Visión:<h3><h2>Convertirnos en aliados estratégicos de nuestros clientes, basados en nuestra 		capacidad de ser una empresa altamente flexible y proactiva y que experimente un crecimiento sostenido 		en el tiempo. </h2>
+
+<table>
+<tr>
+  <td>
+  <h3>Misión:</h3>
+  <p><h2>Entregar la mejor calidad, servicio y precios de mercado. Para ello enfocaremos    nuestro trabajo en un mejoramiento continuo con los servicios prestados hacia ellos y así dar respuesta   real y satisfactoria a sus requerimientos. </h2></p></td>
+
+  <td rowspan="2"  align="center" width="150" valign="middle">
+  <div class="imagen">
+    <%= link_to image_tag('container.jpg') %>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>
+  <h3>Visión:</h3>
+  <p><h2>Convertirnos en aliados estratégicos de nuestros clientes, basados en nuestra     capacidad de ser una empresa altamente flexible y proactiva y que experimente un crecimiento sostenido    en el tiempo. </h2></p>
+  </td>
+</tr>
+
+</table>
 
  </body>
  
