@@ -15,7 +15,8 @@
  */
 
 @media (min-width: 767px) {
-body { padding-top: 10px; }
+body { padding-top: 10px; 
+}
 }
 
 a.btn { color: #FFF; }
