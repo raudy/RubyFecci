@@ -15,11 +15,13 @@
  */
 
 @media (min-width: 767px) {
-body { padding-top: 80px; }
+body { padding-top: 10px; 
+}
 }
 
 a.btn { color: #FFF; }
 a.btn:visited { color: #FFF; }
 
 div.navbar div.container a { color: #109670}
+
 

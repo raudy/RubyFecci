@@ -24,7 +24,9 @@ $navbar-default-color: $light-orange;
 }
 
 body{
+    height:100%;
     padding-top: 20px;
+    padding-bottom:60px;   /* Height of the footer */
 }
 
 .nav_item{
@@ -45,6 +47,7 @@ h1{
     font-size: 3em;
     letter-spacing: -2px;
     margin-bottom: 2px;
+    margin-top: 2px;
     text-align: center;
 }
 
@@ -55,34 +58,53 @@ h2{
     color: #777;
 }
 
-td.first {
-    font-size: 15px;
-    line-height: 20px;
-    padding: 0 20px;
-    text-align: center;
-    vertical-align: top;
-    width: 20%;
-}
-
-table.second{
-}
 
 table{
     font-size: 15px;
     line-height: 20px;
     padding-right: 20px;
-    text-align: center;
+    text-align: justify;
     vertical-align: top;
     width: 30%;
     border-collapse: separate;
     border-spacing: 10px;
 }
 
-tr{
-    font-size: 15px;
-    line-height: 20px;
+
+.row{
     text-align: center;
-    vertical-align: top;
-    width: 40%;
-    border-collapse: separate;
 }
+
+p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 150px;
+    margin-left: 400px;
+}
+
+
+img
+{
+    position: relative;
+    top:auto;
+    left: auto;
+    margin: 0 auto;
+    horizontal-align:middle;
+    line-height:100px;
+}
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
+}
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+
+
+

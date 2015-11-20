@@ -2,19 +2,19 @@
 <br>
 <br>
 <nav class="navbar-inverse navbar-default">
-    <table>
-    <td class="first">
-		
-		<td><%= link_to "Inicio",{ controller: "home"}, class: "btn btn-lg "%></td>
-
-	        <td><%= link_to "Quiénes Somos",{ controller: "quienesomos"}, class: "btn btn-lg "%></td>
-
-	        <td><%= link_to "Productos",{ controller: "mostrarprod"}, class: "btn btn-lg "%></td>
-
-	        <td><%= link_to "Contacto",{ controller: "contacto"}, class: "btn btn-lg "%></td>
-	<td>    
-	</tr>
-	</table>
+<table>
+<div class="row">
+    <div class="col-md-3">
+      <%= link_to "Inicio",{ controller: "home"}, class: "btn btn-lg "%></div>
+    <div class="col-md-3">
+        <%= link_to "Quiénes Somos",{ controller: "quienesomos"}, class: "btn btn-lg "%></div>
+    <div class="col-md-3">
+        <%= link_to "Productos",{ controller: "mostrarprod"}, class: "btn btn-lg "%></div>
+    <div class="col-md-3">
+        <%= link_to "Contacto",{ controller: "contacto"}, class: "btn btn-lg "%></div>
+    </div>
+</div>
+</table>
 </nav>
 <br>
 <br>
