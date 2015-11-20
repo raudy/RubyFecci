@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151114203032) do
+ActiveRecord::Schema.define(version: 20151120152826) do
 
   create_table "categoria", force: :cascade do |t|
     t.integer  "cod",        limit: 4
@@ -46,13 +46,6 @@ ActiveRecord::Schema.define(version: 20151114203032) do
     t.string   "cfactura_id", limit: 255
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
-  end
-
-  create_table "empleados", force: :cascade do |t|
-    t.string   "user",       limit: 255
-    t.string   "pass",       limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
   end
 
   create_table "entregas", force: :cascade do |t|
@@ -100,6 +93,7 @@ ActiveRecord::Schema.define(version: 20151114203032) do
     t.string   "last_sign_in_ip",        limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "roles_mask",             limit: 4
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
