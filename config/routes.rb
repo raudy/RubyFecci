@@ -15,7 +15,8 @@ Rails.application.routes.draw do
 
   get 'inicio/index'
 
-  devise_for :users
+  devise_for :users, controllers: {registrations: 'registrations'}
+
   get 'home/index'
 
   resources :dfacturas
