@@ -2,62 +2,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <h1>Página Principal</h1>
   <br>
   <br>
-
+  <nav class="navbar-inverse navbar-default">
+    <table>
+      <div class="row">
+          <div class="col-md-3">
+            <%= link_to "Inicio",{ controller: "home"}, class: "btn btn-lg "%></div>
+          <div class="col-md-3">
+              <%= link_to "Quiénes Somos",{ controller: "quienesomos"}, class: "btn btn-lg "%></div>
+          <div class="col-md-3">
+              <%= link_to "Productos",{ controller: "mostrarprod"}, class: "btn btn-lg "%></div>
+          <div class="col-md-3">
+              <%= link_to "Contacto",{ controller: "contacto"}, class: "btn btn-lg "%></div>
+          </div>
+      </div>
+    </table>
+  </nav>
 </head>
+
 <body>
-
-<nav class="navbar-inverse navbar-default">
-<table>
-<div class="row">
-    <div class="col-md-3">
-      <%= link_to "Inicio",{ controller: "home"}, class: "btn btn-lg "%></div>
-    <div class="col-md-3">
-        <%= link_to "Quiénes Somos",{ controller: "quienesomos"}, class: "btn btn-lg "%></div>
-    <div class="col-md-3">
-        <%= link_to "Productos",{ controller: "mostrarprod"}, class: "btn btn-lg "%></div>
-    <div class="col-md-3">
-        <%= link_to "Contacto",{ controller: "contacto"}, class: "btn btn-lg "%></div>
-    </div>
-</div>
-</table>
-</nav>
-
 <br>
 <br>
-<br>
-<br>
-
+<header>
   <table>
-  <tr>
-    <td>
-    <h3>Misión:</h3>
-    <p><h2>Entregar la mejor calidad, servicio y precios de mercado. Para ello enfocaremos    nuestro trabajo en un mejoramiento continuo con los servicios prestados hacia ellos y así dar respuesta   real y satisfactoria a sus requerimientos. </h2></p></td>
+    <tr>
+      <td>
+      <h3>Misión:</h3>
+      <p><h2>Entregar la mejor calidad, servicio y precios de mercado. Para ello enfocaremos    nuestro trabajo en un mejoramiento continuo con los servicios prestados hacia ellos y así dar respuesta   real y satisfactoria a sus requerimientos. </h2></p></td>
 
-    <td rowspan="2" valign="middle" style=" padding-left: 10%; padding-right: 30%; box-sizing: border-box;"><img src="<%= asset_path 'container.jpg' %>" width="400"></td>
+      <td rowspan="2" valign="middle" style=" padding-left: 10%; padding-right: 30%; box-sizing: border-box;"><img src="<%= asset_path 'container.jpg' %>" width="400"></td>
+    </tr>
 
-  </tr>
-
-  <tr>
-    <td>
-    <h3>Visión:</h3>
-    <p><h2>Convertirnos en aliados estratégicos de nuestros clientes, basados en nuestra     capacidad de ser una empresa altamente flexible y proactiva y que experimente un crecimiento sostenido en el tiempo. </h2></p>
-    </td>
-  </tr>
+    <tr>
+      <td>
+      <h3>Visión:</h3>
+      <p><h2>Convertirnos en aliados estratégicos de nuestros clientes, basados en nuestra     capacidad de ser una empresa altamente flexible y proactiva y que experimente un crecimiento sostenido en el tiempo. </h2></p>
+      </td>
+    </tr>
   </table>
+</header>
+<!--========================================================================================== -->
 
- </body>
 
-<!-- <div id="container">
-   <div id="body"></div>
-   <div id="footer">
-        <p>Avda. Elías Fernández Albano # 565 La cisterna – Santiago</p> 
-   </div>
-  </div>
-</div> -->
+    <div id="wrapper">
+        <div id="content"></div>
+        <div id="footer"><p>Avda. Elías Fernández Albano # 565 La cisterna – Santiago</p></div>
+    </div>
+
+</body>
  
- </html>
+</html>
  

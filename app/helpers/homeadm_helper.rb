@@ -1,0 +1,2 @@
+module HomeadmHelper
+end

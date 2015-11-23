@@ -26,7 +26,6 @@ $navbar-default-color: $light-orange;
 body{
     height:100%;
     padding-top: 20px;
-    padding-bottom:60px;   /* Height of the footer */
 }
 
 .nav_item{
@@ -59,6 +58,7 @@ h2{
 }
 
 
+/*Tablas*/
 table{
     font-size: 15px;
     line-height: 20px;
@@ -75,6 +75,8 @@ table{
     text-align: center;
 }
 
+
+/* caracteristicas de los parrafos*/
 p {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -83,6 +85,7 @@ p {
 }
 
 
+/* Imagenes */
 img
 {
     position: relative;
@@ -93,18 +96,120 @@ img
     line-height:100px;
 }
 
+ 
+
+/* Para el pie de pagina*/
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+ 
+#content {
+    /* ... */
+    padding-bottom: 200px; /* El tamaño del footer para evitar el sobreposicionamiento */
+}
+ 
 #footer {
-   position:absolute;
-   bottom:0;
-   width:100%;
-   height:60px;   /* Height of the footer */
-   background:#6cf;
-}
-
-#container {
-   min-height:100%;
-   position:relative;
+    width: 100%;
+    height: 81px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background:#000;
 }
 
 
 
+/* menu home2 */ 
+
+  .sidebar-nav .navbar ul {
+    float: none;
+  }
+  .sidebar-nav .navbar ul:not {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-left: 0px;
+    padding-right: 5em;
+    padding-bottom: 12px;
+  }
+
+
+
+/* Email */
+
+.main {width:980px;padding:0;margin:0 auto;font-size:0.875em;line-height:1.428em}
+.col-1, .col-2{float:left}
+.wrapper {width:100%;overflow:hidden}
+.indent-left {padding-left: 20px}
+.button {
+    display:inline-block;
+    padding:0 24px;
+    margin-left:2px;
+    margin-bottom:2px;
+    font-size:14px;
+    line-height:38px;
+    color:#000;
+    border:1px solid #fff;
+    background:url(../images/button-tail.gif) 0 0 repeat-x #f2f2f2;
+    box-shadow:0 0 2px #bbb;
+    cursor:pointer;
+}
+
+#content {
+    width:100%;
+    padding:25px 0 42px;
+    background:url(../images/content-bg.jpg) center -196px repeat-y #f4f5f7;
+}
+
+
+/***** contact form *****/
+#contact-form {
+    position:relative;
+    vertical-align:top;
+    width:100%;
+    z-index:1;
+    }
+    #contact-form fieldset {
+        border:none;
+        padding:0;
+        }           
+            #contact-form label {
+                display:block;
+                height:50px;
+            }
+            
+            #contact-form input {
+                width:323px;
+                padding:12px 20px;
+                margin:0;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:14px;
+                line-height:1.214em;
+                color:#808080;
+                border:1px solid #e6e6e6;
+                background:#fff;
+                outline:none;
+            }
+            #contact-form textarea {
+                overflow:auto;
+                height:130px;
+                width:563px;
+                padding:12px 20px;
+                margin:0;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:14px;
+                line-height:1.214em;
+                color:#808080;
+                border:1px solid #e6e6e6;
+                background:#fff;
+                outline:none;
+            }
+        .buttons-wrapper {padding:18px 0 0 0;text-align:right}
+        .buttons-wrapper a {margin-left:15px}

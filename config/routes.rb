@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
     
 
+  get 'homeadm/index'
+
   get 'cliente/index'
 
   get 'empleado/index'
