@@ -1,28 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
 <h1>Productos</h1>
 <br>
 <br>
-<nav class="navbar-inverse navbar-default">
-<table>
-<div class="row">
-    <div class="col-md-3">
-      <%= link_to "Inicio",{ controller: "home"}, class: "btn btn-lg "%></div>
-    <div class="col-md-3">
-        <%= link_to "Quiénes Somos",{ controller: "quienesomos"}, class: "btn btn-lg "%></div>
-    <div class="col-md-3">
-        <%= link_to "Productos",{ controller: "mostrarprod"}, class: "btn btn-lg "%></div>
-    <div class="col-md-3">
-        <%= link_to "Contacto",{ controller: "contacto"}, class: "btn btn-lg "%></div>
+	<nav class="navbar navbar-default">
+		<table>
+			<div class="row">
+			    <div class="col-md-3">
+			      <%= link_to "Inicio",{ controller: "home"}, class: "btn btn-lg "%></div>
+			    <div class="col-md-3">
+			        <%= link_to "Quiénes Somos",{ controller: "quienesomos"}, class: "btn btn-lg "%></div>
+			    <div class="col-md-3">
+			        <%= link_to "Productos",{ controller: "mostrarprod"}, class: "btn btn-lg "%></div>
+			    <div class="col-md-3">
+			        <%= link_to "Contacto",{ controller: "contacto"}, class: "btn btn-lg "%></div>
+			    </div>
+			</div>
+		</table>
+	</nav>
+</head>
+
+<body background="<%= asset_path 'bosque.jpg' %>" width=100%>
+	<div id="content">
+		<div id="marginn">
+			<h2>Nuestra gama de productos:</h2>
+			<table width="778" cellspacing="1" cellpadding="3" border="1" bgcolor="#1d1d1d" align="center">
+				<tr>
+				<td width=180 align="center" bgcolor="#ffffff"><h2>Productos</h2></td>
+				<td><h2>Precios</h2></td>
+				<!--bgcolor="#ffffff" align=center><img src="banner.gif" width="468" height="60" border="0"-->
+				</tr>
+			</table>
+		</div>
+	</div>
+
+<!--===========================================================================================-->
+<footer>
+<div id="wrapper">
+        <div id="header"></div>
+        <div id="contento"></div>
+        <div id="footer">Avda. Elías Fernández Albano # 565 La cisterna – Santiago</div>
     </div>
-</div>
-</table>
-</nav>
-<br>
-<br>
-<br>
-<br>
-
-
-<h2>Nuestra gama de productos:</h2>
-
+</footer>
+</body>
+</html>
 
 

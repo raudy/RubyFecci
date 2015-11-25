@@ -4,70 +4,75 @@
 	<br>
 	<br>	
 </head>
-<body>
-
-<header>
-	<nav class="navbar-inverse navbar-default">
-		<table>
-			<div class="row">
-			    <div class="col-md-3">
-			      <%= link_to "Inicio",{ controller: "home"}, class: "btn btn-lg "%></div>
-			    <div class="col-md-3">
-			        <%= link_to "Quiénes Somos",{ controller: "quienesomos"}, class: "btn btn-lg "%></div>
-			    <div class="col-md-3">
-			        <%= link_to "Productos",{ controller: "mostrarprod"}, class: "btn btn-lg "%></div>
-			    <div class="col-md-3">
-			        <%= link_to "Contacto",{ controller: "contacto"}, class: "btn btn-lg "%></div>
-			    </div>
-			</div>
-		</table>
-	</nav>  
-</header>
-<br>
-<br>
+<body background="<%= asset_path 'bosque.jpg' %>" width=100%>
+	<header>
+		<nav class="navbar navbar-default">
+			<table>
+				<div class="row">
+				    <div class="col-md-3">
+				      <%= link_to "Inicio",{ controller: "home"}, class: "btn btn-lg "%></div>
+				    <div class="col-md-3">
+				        <%= link_to "Quiénes Somos",{ controller: "quienesomos"}, class: "btn btn-lg "%></div>
+				    <div class="col-md-3">
+				        <%= link_to "Productos",{ controller: "mostrarprod"}, class: "btn btn-lg "%></div>
+				    <div class="col-md-3">
+				        <%= link_to "Contacto",{ controller: "contacto"}, class: "btn btn-lg "%></div>
+				    </div>
+				</div>
+			</table>
+		</nav>  
+	</header>
 <!--==============================content================================-->
-<section id="content">
-	<div class="main">
-		<div class="indent-left">
-			<div class="wrapper">
-				<article class="col-1">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.195698454598!2d-70.66866484952635!3d-33.52229720849417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662dae3229d34f7%3A0xa48f177dde0fc86d!2sAv.+Fern%C3%A1ndez+Albano+565%2C+La+Cisterna%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1447628614073" width="260" height="223" frameborder="0" style="border:0" allowfullscreen></iframe>
-					<h3>Our Address</h3>
-					<dl>
-						<dt>8901 Marmora Road,<br>Glasgow, D04 89GR.</dt>
-						<dd><span>Freephone:</span>  +1 800 559 6580</dd>
-						<dd><span>Telephone:</span>  +1 800 603 6035</dd>
-						<dd><span>FAX:</span>  +1 800 889 9898</dd>
-						<dd><span>E-mail:</span> <a class="link-2" href="#">nico.raudy@outlook.com</a></dd>
-					</dl>
-				</article>
-				<article class="col-2">
-				<div class="indent-left">
-					<h3>Get In Touch</h3>
-					<form id="contact-form">
-						<fieldset>
-							<label>
-								<input type="text" value="Name" onBlur="if(this.value=='') this.value='Name'" onFocus="if(this.value =='Name' ) this.value=''" />
-							</label>
-							<label>
-							  <input type="text" value="Email" onBlur="if(this.value=='') this.value='Email'" onFocus="if(this.value =='Email' ) this.value=''" />
-							</label>
-							<label>
-							  <input type="text" value="Phone" onBlur="if(this.value=='') this.value='Phone'" onFocus="if(this.value =='Phone' ) this.value=''" />
-							</label>
-							<textarea onBlur="if(this.value=='') this.value='Message'" onFocus="if(this.value =='Message' ) this.value=''">Message</textarea>
-							<div class="buttons-wrapper">
-								<a class="button" onClick="document.getElementById('contact-form').reset()">Clear</a>
-								<a class="button" onClick="document.getElementById('contact-form').submit()">Send</a>
+	<section id="content">
+		<div class="main">
+			<div class="indent-left">
+				<div class="wrapper">
+					<article class="col-1">
+					<br>
+					<br>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.195698454598!2d-70.66866484952635!3d-33.52229720849417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662dae3229d34f7%3A0xa48f177dde0fc86d!2sAv.+Fern%C3%A1ndez+Albano+565%2C+La+Cisterna%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1447628614073" width="260" height="223" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<h3>Nuestra dirección:</h3>
+						<dl>
+							<dt>8901 Marmora Road,<br>Glasgow, D04 89GR.</dt>
+							<dd><span>Teléfono:</span>  +1 800 603 6035</dd>
+							<dd><span>E-mail:</span> <a class="link-2" href="#">nico.raudy@outlook.com</a></dd>
+						</dl>
+					</article>
+					<article class="col-2">
+					<div class="indent-left">
+						<h3>Contáctanos</h3>
+						<form id="contact-form">
+							<fieldset>
+								<label>
+									<input type="text" value="Nombre" onBlur="if(this.value=='') this.value='Nombre'" onFocus="if(this.value =='Nombre' ) this.value=''" />
+								</label>
+								<label>
+								  <input type="text" value="Email" onBlur="if(this.value=='') this.value='Email'" onFocus="if(this.value =='Email' ) this.value=''" />
+								</label>
+								<label>
+								  <input type="text" value="Telefono" onBlur="if(this.value=='') this.value='Telefono'" onFocus="if(this.value =='Telefono' ) this.value=''" />
+								</label>
+								<textarea onBlur="if(this.value=='') this.value='Message'" onFocus="if(this.value =='Message' ) this.value=''">Mensaje</textarea>
+								<div class="buttons-wrapper">
+									<a class="button" onClick="document.getElementById('contact-form').reset()">Limpiar</a>
+									<a class="button" onClick="document.getElementById('contact-form').submit()">Enviar</a>
+									</div>
 								</div>
-							</div>
-						</fieldset>
-					</form>
-				</article>
+							</fieldset>
+						</form>
+					</article>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
+<!--=====================================================================================-->
+	<footer>
+	<div id="wrapper">
+	        <div id="header"></div>
+	        <div id="contento"></div>
+	        <div id="footer">Avda. Elías Fernández Albano # 565 La cisterna – Santiago</div>
+	    </div>
+	</footer>
 </body>
 </html>
