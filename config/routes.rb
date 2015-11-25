@@ -1,25 +1,16 @@
 Rails.application.routes.draw do
-    
 
   get 'homeadm/index'
-
   get 'cliente/index'
-
   get 'empleado/index'
-
   get 'administrador/index'
-
   get 'mostrarprod/index'
-
   get 'contacto/index'
-
   get 'quienesomos/index'
-
   get 'inicio/index'
+  get 'home/index'
 
   devise_for :users, controllers: {registrations: 'registrations'}
-
-  get 'home/index'
 
   resources :dfacturas
   resources :cfacturas
@@ -29,7 +20,7 @@ Rails.application.routes.draw do
   resources :entregas
   resources :materia
   resources :clientes
-  #root 'empleados#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
