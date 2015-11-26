@@ -21,17 +21,27 @@
 	</nav>
 </head>
 
-<body background="<%= asset_path 'bosque.jpg' %>" width=100%>
+<body background="<%= asset_path 'gris.jpg' %>" width=100%>
 	<div id="content">
 		<div id="marginn">
-			<h2>Nuestra gama de productos:</h2>
-			<table width="778" cellspacing="1" cellpadding="3" border="1" bgcolor="#1d1d1d" align="center">
-				<tr>
-				<td width=180 align="center" bgcolor="#ffffff"><h2>Productos</h2></td>
-				<td><h2>Precios</h2></td>
-				<!--bgcolor="#ffffff" align=center><img src="banner.gif" width="468" height="60" border="0"-->
-				</tr>
-			</table>
+			
+			<div class='img' id='img-1'>
+				<div class='mask'></div>
+				<img src='<%= asset_path '07.jpg' %>' />
+			</div>	
+			<div class='img' id='img-2'>
+				<div class='mask'></div>
+				<img src='<%= asset_path '07.jpg' %>' />
+			</div>
+		
+			<div class='img' id='img-4'>
+				<div class='mask'></div>
+				<img src='<%= asset_path '07.jpg' %>' />
+			</div>
+			<div class='img' id='img-5'>
+				<div class='mask'></div>
+				<img src='<%= asset_path '07.jpg' %>' />
+			</div>
 		</div>
 	</div>
 
