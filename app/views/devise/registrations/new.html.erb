@@ -5,25 +5,25 @@
 
 
   <% for role in User::ROLES %>
-    <%= check_box_tag "user[roles][#{role}]", role, @user.roles.include?(role), {:name => "user[roles][]"}%>
+    <%= radio_button_tag "user[roles][#{role}]", role, @user.roles.include?(role), {:name => "user[role][]"}%>
     <%= label_tag "user_roles_#{role}", role.to_s.humanize %><br />
   <% end %>
   <%= hidden_field_tag "user[roles][]", "" %>
-
+  <br>
 
   <div><%= f.label :username, "Nombre de usuario" %><br />
   <%= f.text_field :username, placeholder: "Provisto por el admin" %></div>
-
+  <br>
   <div><%= f.label :email, "Correo" %><br />
   <%= f.email_field :email, :autofocus => true, placeholder: "ejemplo@ejemplo.cl" %></div>
-
+  <br>
   <div><%= f.label :password, "Contraseña" %><br />
   <%= f.password_field :password, placeholder: "********" %></div>
-
+  <br>
   <div><%= f.label :password_confirmation, "Confirmar contraseña" %><br />
   <%= f.password_field :password_confirmation, placeholder: "********" %></div>
-
+  <br>
   <div><%= f.submit "Regístrate" %></div>
 <% end %>
-
+  <br>
 <%= render "devise/shared/links" %>
