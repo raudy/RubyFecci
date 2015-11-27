@@ -15,7 +15,6 @@
   </thead>
 
   <tbody>
-	<body background="<%= asset_path 'gris.jpg' %>" width=100%>
     <% @cfacturas.each do |cfactura| %>
       <tr>
         <td><%= cfactura.num %></td>

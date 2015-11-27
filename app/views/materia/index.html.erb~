@@ -12,7 +12,6 @@
   </thead>
 
   <tbody>
-	<body background="<%= asset_path 'gris.jpg' %>" width=100%>
     <% @materia.each do |materium| %>
       <tr>
         <td><%= materium.cod %></td>
