@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'inicio/index'
   get 'home/index'
 
-  devise_for :users, controllers: {registrations: 'registrations'}
+  devise_for :users, controllers: {registrations: 'registrations'}, :path_names => {:sign_up => "registro", :sign_in => "sesion"}
 
   resources :dfacturas
   resources :cfacturas

@@ -1,7 +1,7 @@
 <%= form_for(@entrega) do |f| %>
   <% if @entrega.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@entrega.errors.count, "error") %> prohibited this entrega from being saved:</h2>
+      <h2><%= pluralize(@entrega.errors.count, "error") %>, no se puede guardar la entrega:</h2>
 
       <ul>
       <% @entrega.errors.full_messages.each do |message| %>
@@ -28,6 +28,6 @@
     <%= f.text_field :materia_id %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Aceptar" %>
   </div>
 <% end %>

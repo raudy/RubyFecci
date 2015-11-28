@@ -28,7 +28,7 @@ class MateriaController < ApplicationController
 
     respond_to do |format|
       if @materium.save
-        format.html { redirect_to @materium, notice: 'Materium was successfully created.' }
+        format.html { redirect_to @materium, notice: 'Materia prima creada con éxito.' }
         format.json { render :show, status: :created, location: @materium }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class MateriaController < ApplicationController
   def update
     respond_to do |format|
       if @materium.update(materium_params)
-        format.html { redirect_to @materium, notice: 'Materium was successfully updated.' }
+        format.html { redirect_to @materium, notice: 'Materia prima editada con éxito.' }
         format.json { render :show, status: :ok, location: @materium }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class MateriaController < ApplicationController
   def destroy
     @materium.destroy
     respond_to do |format|
-      format.html { redirect_to materia_url, notice: 'Materium was successfully destroyed.' }
+      format.html { redirect_to materia_url, notice: 'Materia prima eliminada con éxito.' }
       format.json { head :no_content }
     end
   end

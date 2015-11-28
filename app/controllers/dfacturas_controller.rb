@@ -28,7 +28,7 @@ class DfacturasController < ApplicationController
 
     respond_to do |format|
       if @dfactura.save
-        format.html { redirect_to @dfactura, notice: 'Dfactura was successfully created.' }
+        format.html { redirect_to @dfactura, notice: 'Detalle de factura creado con éxito.' }
         format.json { render :show, status: :created, location: @dfactura }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class DfacturasController < ApplicationController
   def update
     respond_to do |format|
       if @dfactura.update(dfactura_params)
-        format.html { redirect_to @dfactura, notice: 'Dfactura was successfully updated.' }
+        format.html { redirect_to @dfactura, notice: 'Detalle de factura editado con éxito.' }
         format.json { render :show, status: :ok, location: @dfactura }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class DfacturasController < ApplicationController
   def destroy
     @dfactura.destroy
     respond_to do |format|
-      format.html { redirect_to dfacturas_url, notice: 'Dfactura was successfully destroyed.' }
+      format.html { redirect_to dfacturas_url, notice: 'Detalle de factura eliminado con éxito.' }
       format.json { head :no_content }
     end
   end

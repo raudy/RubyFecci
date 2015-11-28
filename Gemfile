@@ -30,6 +30,11 @@ gem 'devise', '~> 3.4.0'
 #Roles y permisos
 gem 'cancancan'
 
+#Validar un Rut
+gem 'rut_chileno'
+
+gem 'rolify'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 

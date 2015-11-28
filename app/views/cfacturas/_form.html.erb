@@ -1,7 +1,7 @@
 <%= form_for(@cfactura) do |f| %>
   <% if @cfactura.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@cfactura.errors.count, "error") %> prohibited this cfactura from being saved:</h2>
+      <h2><%= pluralize(@cfactura.errors.count, "error") %>, no se puede guardar la cabecera de factura:</h2>
 
       <ul>
       <% @cfactura.errors.full_messages.each do |message| %>
@@ -32,6 +32,6 @@
     <%= f.text_field :cliente_id %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Aceptar" %>
   </div>
 <% end %>

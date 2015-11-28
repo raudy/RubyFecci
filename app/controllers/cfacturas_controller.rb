@@ -28,7 +28,7 @@ class CfacturasController < ApplicationController
 
     respond_to do |format|
       if @cfactura.save
-        format.html { redirect_to @cfactura, notice: 'Cfactura was successfully created.' }
+        format.html { redirect_to @cfactura, notice: 'Cabecera de factura creada con éxito.' }
         format.json { render :show, status: :created, location: @cfactura }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class CfacturasController < ApplicationController
   def update
     respond_to do |format|
       if @cfactura.update(cfactura_params)
-        format.html { redirect_to @cfactura, notice: 'Cfactura was successfully updated.' }
+        format.html { redirect_to @cfactura, notice: 'Cabecera de factura editada con éxito.' }
         format.json { render :show, status: :ok, location: @cfactura }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class CfacturasController < ApplicationController
   def destroy
     @cfactura.destroy
     respond_to do |format|
-      format.html { redirect_to cfacturas_url, notice: 'Cfactura was successfully destroyed.' }
+      format.html { redirect_to cfacturas_url, notice: 'Cabecera de factura eliminada con éxito.' }
       format.json { head :no_content }
     end
   end

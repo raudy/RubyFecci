@@ -28,7 +28,7 @@ class EntregasController < ApplicationController
 
     respond_to do |format|
       if @entrega.save
-        format.html { redirect_to @entrega, notice: 'Entrega was successfully created.' }
+        format.html { redirect_to @entrega, notice: 'Entrega creada con éxito.' }
         format.json { render :show, status: :created, location: @entrega }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class EntregasController < ApplicationController
   def update
     respond_to do |format|
       if @entrega.update(entrega_params)
-        format.html { redirect_to @entrega, notice: 'Entrega was successfully updated.' }
+        format.html { redirect_to @entrega, notice: 'Entrega editada con éxito.' }
         format.json { render :show, status: :ok, location: @entrega }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class EntregasController < ApplicationController
   def destroy
     @entrega.destroy
     respond_to do |format|
-      format.html { redirect_to entregas_url, notice: 'Entrega was successfully destroyed.' }
+      format.html { redirect_to entregas_url, notice: 'Entrega eliminada con éxito.' }
       format.json { head :no_content }
     end
   end

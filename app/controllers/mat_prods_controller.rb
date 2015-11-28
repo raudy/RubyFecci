@@ -28,7 +28,7 @@ class MatProdsController < ApplicationController
 
     respond_to do |format|
       if @mat_prod.save
-        format.html { redirect_to @mat_prod, notice: 'Mat prod was successfully created.' }
+        format.html { redirect_to @mat_prod, notice: 'Materia/Producto creado con éxito.' }
         format.json { render :show, status: :created, location: @mat_prod }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class MatProdsController < ApplicationController
   def update
     respond_to do |format|
       if @mat_prod.update(mat_prod_params)
-        format.html { redirect_to @mat_prod, notice: 'Mat prod was successfully updated.' }
+        format.html { redirect_to @mat_prod, notice: 'Materia/Producto editado con éxito.' }
         format.json { render :show, status: :ok, location: @mat_prod }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class MatProdsController < ApplicationController
   def destroy
     @mat_prod.destroy
     respond_to do |format|
-      format.html { redirect_to mat_prods_url, notice: 'Mat prod was successfully destroyed.' }
+      format.html { redirect_to mat_prods_url, notice: 'Materia/Producto eliminado con éxito.' }
       format.json { head :no_content }
     end
   end

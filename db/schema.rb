@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151120154800) do
+ActiveRecord::Schema.define(version: 20151127165454) do
 
   create_table "categoria", force: :cascade do |t|
     t.integer  "cod",        limit: 4
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20151120154800) do
   end
 
   create_table "clientes", force: :cascade do |t|
-    t.integer  "rut",        limit: 4
+    t.string   "rut",        limit: 255
     t.string   "nombre",     limit: 255
     t.string   "direccion",  limit: 255
     t.integer  "fono",       limit: 4

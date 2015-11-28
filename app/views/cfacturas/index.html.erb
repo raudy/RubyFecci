@@ -15,7 +15,7 @@
   </thead>
 
   <tbody>
-	<body background="<%= asset_path 'gris.jpg' %>" width=100%>
+  
     <% @cfacturas.each do |cfactura| %>
       <tr>
         <td><%= cfactura.num %></td>
@@ -23,9 +23,9 @@
         <td><%= cfactura.mneto %></td>
         <td><%= cfactura.mbruto %></td>
         <td><%= cfactura.cliente_id %></td>
-        <td><%= link_to 'Show', cfactura %></td>
-        <td><%= link_to 'Edit', edit_cfactura_path(cfactura) %></td>
-        <td><%= link_to 'Destroy', cfactura, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', cfactura %></td>
+        <td><%= link_to 'Editar', edit_cfactura_path(cfactura) %></td>
+        <td><%= link_to 'Eliminar', cfactura, method: :delete, data: { confirm: '¿Está seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>

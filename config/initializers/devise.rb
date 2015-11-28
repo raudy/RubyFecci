@@ -5,6 +5,8 @@ Devise.setup do |config|
 
   require 'devise/orm/active_record'
 
+  config.authentication_keys = [ :username ]
+
   config.case_insensitive_keys = [ :email ]
 
   config.strip_whitespace_keys = [ :email ]
@@ -15,7 +17,7 @@ Devise.setup do |config|
 
   config.reconfirmable = true
 
-  config.password_length = 8..128
+  config.password_length = 8..16
 
   config.reset_password_within = 6.hours
 

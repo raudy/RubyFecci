@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Listando Clientes</h1>
 <table>
   <thead>
@@ -13,7 +11,7 @@
   </thead>
 
   <tbody>
-	<body background="<%= asset_path 'gris.jpg' %>" width=100%>
+	
     <% @clientes.each do |cliente| %>
       <tr>
         <td><%= cliente.rut %></td>
@@ -23,7 +21,7 @@
         <td><%= cliente.fono %></td>
         <td><%= link_to 'Mostrar', cliente %></td>
         <td><%= link_to 'Editar', edit_cliente_path(cliente) %></td>
-        <td><%= link_to 'Eliminar', cliente, method: :delete, data: { confirm: 'Esta Seguro?' } %></td>
+        <td><%= link_to 'Eliminar', cliente, method: :delete, data: { confirm: '¿Está Seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>

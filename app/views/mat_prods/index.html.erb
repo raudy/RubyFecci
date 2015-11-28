@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listando Materia-Producto</h1>
+<h1>Listando Materia/Producto</h1>
 
 <table>
   <thead>
@@ -13,7 +13,7 @@
   </thead>
 
   <tbody>
-	<body background="<%= asset_path 'gris.jpg' %>" width=100%>
+
     <% @mat_prods.each do |mat_prod| %>
       <tr>
         <td><%= mat_prod.cantidad %></td>
@@ -29,7 +29,7 @@
 
 <br>
 
-<%= link_to 'Nueva Mat_Prod', new_mat_prod_path %>
+<%= link_to 'Nueva Mat/Prod', new_mat_prod_path %>
 <br>
 <br>
 <a href="javascript:history.back(-1);" title="Ir la página anterior">Volver</a>

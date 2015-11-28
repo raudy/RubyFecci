@@ -1,7 +1,7 @@
 <%= form_for(@cliente) do |f| %>
   <% if @cliente.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@cliente.errors.count, "error") %> prohibited this cliente from being saved:</h2>
+      <h2><%= pluralize(@cliente.errors.count, "error") %>, no se puede guardar el cliente:</h2>
 
       <ul>
       <% @cliente.errors.full_messages.each do |message| %>
@@ -28,6 +28,6 @@
     <%= f.number_field :fono %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Aceptar" %>
   </div>
 <% end %>

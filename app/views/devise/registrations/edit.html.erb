@@ -1,5 +1,5 @@
 <h2>Editar Usuario <!--<%= resource_name.to_s.humanize %>--></h2>
-<body background="<%= asset_path 'gris.jpg' %>" width=100%>
+
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
@@ -32,7 +32,9 @@
   </div>
 <% end %>
   <br>
-<h2>Cancelar mi cuenta</h2>
-<p><%= button_to "Cancelar mi cuenta", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %>
-<br>
+
+<h3>Desactivar mi cuenta</h3>
+
+<p>Desactivar tu cuenta significa que no podrás volver a ingresar como empleado. ¿Estás seguro? <%= button_to "Eliminar", registration_path(resource_name), :data => { :confirm => "¿Está seguro?" }, :method => :delete %></p>
+
 <%= link_to "Volver", :back %>
