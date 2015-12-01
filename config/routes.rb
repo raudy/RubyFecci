@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get 'home/index'
 
   devise_for :users, controllers: {registrations: 'registrations'}, :path_names => {:sign_up => "registro", :sign_in => "sesion"}
+  authenticated :user do
+  root :to => 'homeadm#index', as: :authenticated_root
+  end
 
   resources :dfacturas
   resources :cfacturas
